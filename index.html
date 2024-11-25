@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz cumpleaños, Jaaziel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6e6; /* Fondo pastel */
+        }
+
+        /* Estilos generales */
+        h1, p {
+            text-align: center; /* Sólo alinea el texto al centro */
+            margin: 20px;
+        }
+
+        .cake-container {
+            display: flex;
+            justify-content: center; /* Centra el pastel horizontalmente */
+            align-items: center;
+            height: 60vh; /* Da espacio para centrar el pastel */
+        }
+
+        .cake {
+            position: relative;
+            width: 200px;
+            height: 150px;
+        }
+
+        /* Base del pastel */
+        .cake .layer {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to right, #ff9999, #ff6666); /* Color degradado */
+            border-radius: 10px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .cake .layer:nth-child(1) {
+            top: 0;
+            z-index: 3;
+        }
+
+        .cake .layer:nth-child(2) {
+            top: 50px;
+            z-index: 2;
+        }
+
+        .cake .layer:nth-child(3) {
+            top: 100px;
+            z-index: 1;
+        }
+
+        /* Velas */
+        .candle {
+            position: absolute;
+            width: 10px;
+            height: 50px;
+            background-color: #ffcc66;
+            border-radius: 3px;
+            top: -50px;
+        }
+        .candle:nth-child(4) {
+            left: 45px;
+        }
+        .candle:nth-child(5) {
+            left: 90px;
+        }
+        .candle:nth-child(6) {
+            left: 135px;
+        }
+
+        /* Flama de las velas */
+        .flame {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 15px;
+            background: radial-gradient(circle, #ffcc00, #ff9900);
+            border-radius: 50%;
+            animation: flicker 1s infinite;
+        }
+
+        @keyframes flicker {
+            0%, 100% {
+                transform: translateX(-50%) scale(1);
+            }
+            50% {
+                transform: translateX(-50%) scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <h1>🎉 FELICIDADES JAAZIEL 🎉</h1>
+    <p>Muchas felicidades amigo, espero que sigas cumpliendo muchos mas <br>
+        tambien te deseo que cumplas todas tus metas y sueños, y yo se que tu tienes un gran futuro <br>
+         y que algun dia tendras lo que tanto anhelas, porque tu eres alguien con la capacidad de <br>
+        lograr todas sus metas.
+       <br> Tambien que te alejes de todo lo malo y de lo que te afecta tu salud.</p>
+    </p>
+
+    <!-- Contenedor del pastel -->
+    <div class="cake-container">
+        <div class="cake">
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
